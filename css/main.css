@@ -1368,6 +1368,12 @@ address {
   margin-right: auto;
 }
 
+@media screen and (max-width: 1199px) {
+  .third-section {
+    display: none;
+  }
+}
+
 .about-us {
   margin-bottom: 50px;
   min-width: 376px;
