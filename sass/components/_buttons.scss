@@ -2,7 +2,7 @@
     min-width: 200px;
     padding: 10px 32px;
     border-radius: 4px;
-    margin-left: 485px;
+    margin: 0 auto;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: "Roboto";
@@ -24,6 +24,47 @@
         background-color: var(--botton-hover-blue);
     }
 }
+
+// .services-btn{
+//     background: #2196F3;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border-color: transparent;
+//     cursor: pointer;
+ 
+//     color:#FFFFFF ;
+//     font-family: 'Roboto';
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 30px;
+//     letter-spacing: 0.06em;
+
+//     display: flex;
+//     align-items: center;
+//     margin: 0 auto;
+//     transition: 250ms ease;
+
+
+//     @media screen and (max-width:767px) {
+//         display: flex;
+//         justify-content: center;
+//     }
+// }
+
+// .services-btn:focus{
+//     background: #2196F3;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// }
+
+// .services-btn:hover{
+//     background-color: #188CE8;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// }
+
 
 .portfolio-btn-list {
     display: flex;
@@ -89,3 +130,4 @@
         background-color: var(--botton-hover-blue);
     }
 }
+

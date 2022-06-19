@@ -1,61 +1,100 @@
 .fourth-section {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--team-background-color);
-}
-
-
-
-.our-team {
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    background: var(--team-background-color);
 }
 
 .our-team__list {
-    display: flex;
-    align-items: center;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    display: flex; 
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .our-team__list-item {
-    flex-basis: calc(100% - 120px) / 4;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    // margin-bottom: 30px;
+
+    @media screen and (max-width:767px) {
+        width: 450px;
+        height: 622px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+        height: 536px;
+        margin-bottom: 30px;
+    }
+}
+
+.our-team__list-item:nth-child(4) {
+    @media screen and (max-width:767px) {
+        margin-bottom: 0;
+    }
+}
+
+.our-team__list-item:nth-child(3) {
+    @media screen and (max-width:768px) {
+        margin-bottom: 30px;
+        }
+}
+
+.our-team__list-item:last-child,
+.our-team__list-item:nth-child(3) {
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;        
+    }
+}
+
+.our-team__list-item:not(:last-child) {
+    margin-right: 30px;
+    @media screen and (max-width:767px) {
+        margin-right: 0;
+    }
+}
+
+.our-team__list-item:nth-child(2) {
+    @media screen and (max-width:1199px) {
+        margin-right: 0;
+    }
+}
+
+.our-team__list-img {
+    @media screen and (max-width:767px) {
+        width: 450px;
+        height: 460px;
+    }
+
+    @media screen and (min-width:767px) {
+        width: 354px;
+        height: 374px;
+    }
 }
 
 .our-team__wrapper {
-    background: var(--background-color-white);
-    /* material shadow v1 */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
 }
 
 .team-members {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
-    /* identical to box height */
+    line-height: 1.18 ;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; 
     color: var(--primary-text-color);
+
+    margin-bottom: 10px;
 }
 
 .members-positions {
-    padding-top: 10px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
@@ -64,36 +103,40 @@
 
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-list__item {
-    cursor: pointer;
+.social-list__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 44px;
     height: 44px;
+
     background-color: var(--background-color-white);
     border-radius: 50%;
-    transition: background-color 250ms var(--timing-function);
+    transition: 250ms ease;
 
     &:hover,
     &:focus {
         background-color: var(--accent-color);
+        transition: 250ms var(--timing-function);
     }
 }
 
 .social-list__icon {
-    fill: var(--social-links-color);
-    transition: fill 250ms var(--timing-function);
-
-    .social-list__link:hover &,
-    .social-list__link:focus & {
-        fill: var(--background-color-white);
+        fill: var(--social-links-color);
+        transition: fill 250ms var(--timing-function);
+    
+        .social-list__link:hover &,
+        .social-list__link:focus & {
+            fill: var(--background-color-white);
+        }
     }
-}
 

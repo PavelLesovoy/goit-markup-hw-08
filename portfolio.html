@@ -33,10 +33,15 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons/sprite.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
             <ul class="header-list list">
                 <li class="header-list__item">
             <a class="contact-email link" href="mailto:info@devstudio.com">
-                <svg class="header-icon" width="16" height="12">
+                <svg class="header-icon header-icon__email" width="16" height="12">
                     <use href="./images/icons/sprite.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -44,7 +49,7 @@
         </li>
         <li class="header-list__item">
             <a class="contact-number link" href="tel:+380961111111">
-                <svg class="header-icon" width="10" height="16">
+                <svg class="header-icon header-icon__tel" width="10" height="16">
                     <use href="./images/icons/sprite.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -52,8 +57,57 @@
         </li>
         </ul>
         </div>
+
+        <!-- mobile-menu -->
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons/sprite.svg#mobile-close-icon"></use>
+                    </svg>
+                </button>
+                <ul class="list mobile-menu__nav">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a a class="mobile-menu__link link active" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile_menu__contacts list">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__contact-link-tel link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                <a class="mobile-menu__contact-link-email link" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+                </ul>
+                <ul class="mobile-menu__socials">
+                    <li class="mobile-menu__socials-item list">
+                        <a class="mobile-menu__socials-link link" href=""target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__socials-item list">
+                        <a class="mobile-menu__socials-link link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__socials-item list">
+                        <a class="mobile-menu__socials-link link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__socials-item list">
+                        <a class="mobile-menu__socials-link link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
     </header>
-<main>
+<!-- <main>
     <section class="section">
         <div class="container">
         <ul class="list portfolio-btn-list">
@@ -78,7 +132,41 @@
         <ul class="list portfolio-department-list">
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-8.jpg" alt="Технокряк" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-8.webp 1x, ./images/img-8@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-8.jpg 1x, ./images/img-8@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-8-tablet.webp 1x, ./images/img-8-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-8-tablet.jpg 1x, ./images/img-8-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-8-mobile.webp 1x, ./images/img-8-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-8-mobile.jpg 1x, ./images/img-8-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-8.jpg" alt="Технокряк" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -92,7 +180,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-9.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-9.webp 1x, ./images/img-9@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-9.jpg 1x, ./images/img-9@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-9-tablet.webp 1x, ./images/img-9-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-9-tablet.jpg 1x, ./images/img-9-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-9-mobile.webp 1x, ./images/img-9-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-9-mobile.jpg 1x, ./images/img-9-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-9.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -106,7 +228,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-10.jpg" alt="Ресторан Seafood" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-10.webp 1x, ./images/img-10@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-10.jpg 1x, ./images/img-10@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-10-tablet.webp 1x, ./images/img-10-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-10-tablet.jpg 1x, ./images/img-10-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-10-mobile.webp 1x, ./images/img-10-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-10-mobile.jpg 1x, ./images/img-10-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-10.jpg" alt="Ресторан Seafood" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -120,7 +276,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-11.jpg" alt="Проект Prime" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-11.webp 1x, ./images/img-11@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-11.jpg 1x, ./images/img-11@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-11-tablet.webp 1x, ./images/img-11-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-11-tablet.jpg 1x, ./images/img-11-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-11-mobile.webp 1x, ./images/img-11-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-11-mobile.jpg 1x, ./images/img-11-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-11.jpg" alt="Проект Prime" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -134,7 +324,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-12.jpg" alt="Проект Boxes" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-12.webp 1x, ./images/img-12@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-12.jpg 1x, ./images/img-12@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-12-tablet.webp 1x, ./images/img-12-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-12-tablet.jpg 1x, ./images/img-12-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-12-mobile.webp 1x, ./images/img-12-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-12-mobile.jpg 1x, ./images/img-12-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-12.jpg" alt="Проект Boxes" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -148,7 +372,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-13.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-13.webp 1x, ./images/img-13@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-13.jpg 1x, ./images/img-13@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-13-tablet.webp 1x, ./images/img-13-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-13-tablet.jpg 1x, ./images/img-13-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-13-mobile.webp 1x, ./images/img-13-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-13-mobile.jpg 1x, ./images/img-13-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-13.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -162,7 +420,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-14.jpg" alt="Издание Limited Edition" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-14.webp 1x, ./images/img-14@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-14.jpg 1x, ./images/img-14@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-14-tablet.webp 1x, ./images/img-14-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-14-tablet.jpg 1x, ./images/img-14-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-14-mobile.webp 1x, ./images/img-14-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-14-mobile.jpg 1x, ./images/img-14-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-14.jpg" alt="Издание Limited Edition" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -176,7 +468,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-15.jpg" alt="Проект LAB" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-15.webp 1x, ./images/img-15@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-15.jpg 1x, ./images/img-15@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-15-tablet.webp 1x, ./images/img-15-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-15-tablet.jpg 1x, ./images/img-15-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-15-mobile.webp 1x, ./images/img-15-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-15-mobile.jpg 1x, ./images/img-15-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-15.jpg" alt="Проект LAB" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -190,7 +516,41 @@
             </li>
             <li class="portfolio-department-list__item">
                 <div class="project-wrapper">
-                <img src="images/img-16.jpg" alt="Growing Business" width="370" height="294">
+                    <picture>
+                        <source 
+                                srcset="./images/img-16.webp 1x, ./images/img-16@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-16.jpg 1x, ./images/img-16@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-16-tablet.webp 1x, ./images/img-16-tablet@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-16-tablet.jpg 1x, ./images/img-16-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+
+                            <source 
+                                srcset="./images/img-16-mobile.webp 1x, ./images/img-16-mobile@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp"
+                            />
+
+                            <source 
+                                srcset="./images/img-16-mobile.jpg 1x, ./images/img-16-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                        <img src="images/img-16.jpg" alt="Growing Business" width="370" height="294">
+                    </picture>
                 <div class="project-overlay">
                     <div class="project-text">
                         <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -266,6 +626,8 @@
         </div>
     </form>
 </div>
-</footer>
+</footer> -->
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

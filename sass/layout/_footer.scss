@@ -1,62 +1,171 @@
 .footer {
+    background: var(--hero-background-grey);
+    align-items: center;
+    display: flex;
+    justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    background: var(--hero-background-grey);
+
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
 }
 
-.footer-container {
+.footer > .footer-container {
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+    }
+   
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+}
+
+.footer-list {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 165px;
+    
+
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    @media screen and (max-width:767px){
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width:768px){
+       
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    margin-bottom: 60px;
+}
+
+.logo-footer {
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .address {
-    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: var(--background-color-white);
+    
+    margin-top: 20px;
+    margin-bottom: 9px;
+    
 }
 
-.contact-email-footer {
-    font-style: normal;
-    font-weight: normal;
+.contact-email-footer, .contact-number-footer {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
-    color: var(--links-footer-color);
-    transition: color 250ms var(--timing-function);
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    margin-bottom: 9px;
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+    transition: 250ms ease;
 }
-
 
 .contact-number-footer {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    /* or 171% */
-    letter-spacing: 0.03em;
-    color: var(--links-footer-color);
-    transition: color 250ms var(--timing-function);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+    margin: 0;
 }
 
-
-.footer-list {
-    padding-top: 20px;
+.contact-number-footer:hover, .contact-email-footer:hover {
+    color: var(--accent-color);
+    transition: transform 250ms var(--timing-function);
 }
 
-.footer-list__item:not(:last-child) {
-    padding-bottom: 10px;
-}
+// .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background: var(--hero-background-grey);
+// }
+
+// .footer-container {
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .address {
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     /* or 171% */
+//     letter-spacing: 0.03em;
+//     color: var(--background-color-white);
+// }
+
+// .contact-email-footer {
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     /* or 171% */
+//     letter-spacing: 0.03em;
+//     color: var(--links-footer-color);
+//     transition: color 250ms var(--timing-function);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+
+// .contact-number-footer {
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     /* or 171% */
+//     letter-spacing: 0.03em;
+//     color: var(--links-footer-color);
+//     transition: color 250ms var(--timing-function);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+
+// .footer-list {
+//     padding-top: 20px;
+// }
+
+// .footer-list__item:not(:last-child) {
+//     padding-bottom: 10px;
+// }

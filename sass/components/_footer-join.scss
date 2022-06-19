@@ -1,8 +1,42 @@
 .footer-join {
+    @media screen and (min-width:768px) {
+        margin-bottom: 102px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
+}
+
+
+.join-list {
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
+}
+
+.join-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .join-name {
@@ -14,10 +48,51 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--background-color-white);
-    margin-bottom: 20px;
-    padding-top: 12px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+
+    position: relative;
+    right: 30px;
+
+    @media screen and (max-width:767px) {
+       text-align: center; 
+       right: 0;
+       margin-top: 60px;
+    }
+
+    @media screen and (max-width:1199px) {
+        text-align: center; 
+        right: 0;
+    }
 }
+
+.join-list__link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-icon {
+    fill: var(--background-color-white);
+}
+// .footer-join {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: baseline;
+//     margin-left: 70px;
+// }
+
+// .join-name {
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+
+//     color: var(--background-color-white);
+//     margin-bottom: 20px;
+//     padding-top: 12px;
+// }
 
 .join-list {
     display: flex;
@@ -43,7 +118,7 @@
     }
 }
 
-.join-icon {
-    fill: var(--background-color-white);
-    transition: fill 250ms var(--timing-function);
-}
+// .join-icon {
+//     fill: var(--background-color-white);
+//     transition: fill 250ms var(--timing-function);
+// }

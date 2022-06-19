@@ -16,7 +16,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 1, 19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
@@ -33,3 +33,9 @@
     letter-spacing: 0.03em;
     color: var(--background-color-white);
 }
+
+// .logo-footer {
+//     @media screen and (min-width:1200px) {
+//         text-align: left;
+//     }
+// }
