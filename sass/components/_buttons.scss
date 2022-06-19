@@ -124,6 +124,8 @@
     transition: backgroudn-color 250ms var(--timing-function);
     cursor: pointer;
     border: none;
+    margin-right: auto;
+    margin-left: auto;
 
     &:hover,
     &:focus {
