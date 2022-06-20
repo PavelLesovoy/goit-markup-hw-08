@@ -113,8 +113,12 @@
     }
 
     .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @media screen and (min-width: 1200px) {
             width: 231px;
+            align-items: baseline;
         }
     }
 

@@ -184,6 +184,13 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--background-color-white);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .logo-footer {
+    text-align: center;
+  }
 }
 
 .our-team {
@@ -1706,9 +1713,16 @@ address {
   justify-content: center;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-info {
     width: 231px;
+    align-items: baseline;
   }
 }
 
