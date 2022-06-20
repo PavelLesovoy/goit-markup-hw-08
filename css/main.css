@@ -188,6 +188,9 @@ address {
 @media screen and (max-width: 1199.98px) {
   .logo-footer {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
