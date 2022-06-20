@@ -1,15 +1,15 @@
 .subscribe-content {
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    
+
         margin-top: 60px;
     }
 
     @media screen and (max-width: 1199.98px) {
-    width: 100%;
+        width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
-    margin-left: 93px;
+        margin-left: 93px;
     }
 }
 
@@ -31,9 +31,10 @@
 
 .subscribe-block {
     text-align: center;
+
     @media screen and (min-width: 1200px) {
-            display: flex;
-        }
+        display: flex;
+    }
 }
 
 .subscribe-email {
@@ -42,16 +43,16 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
 
-        }
+    }
 
     @media screen and (min-width: 1200px) {
-            width: 358px;
-            margin-bottom: 0;
-        }
+        width: 358px;
+        margin-bottom: 0;
+    }
 
     width: 450px;
     padding-left: 16px;
@@ -66,251 +67,10 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--botton-background-color);
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .subscribe-icon {
     margin-left: 10px;
     fill: var(--botton-background-color);
 }
-
-
-
-// .subscribe-contect {
-//     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-
-//         margin-top: 60px;
-//     }
-
-//     @media screen and (max-width: 1199.98px) {
-//         width: 100%;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         margin-left: 93px;
-//     }
-// }
-
-// .subscribe-title {
-//     @media screen and (max-width: 1199.98px) {
-//         text-align: center;
-//     }
-
-//     margin-bottom: 20px;
-//     font-family: 'Roboto';
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.17;
-//     color: var(--background-color-white);
-//     margin-bottom: 20px;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-// }
-
-// .subscribe-block{
-//     text-align: center;
-//     @media screen and (min-width: 1200px) {
-//             display: flex;
-//         }
-// }
-
-// .subscribe-icon {
-//     margin-left: 10px;
-//     fill: var(--background-color-white);
-// }
-
-// .subscribe-email {
-//     @media screen and (max-width: 480px) {
-//         width: 100%;
-//     }
-
-// @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-//         display: block;
-//         margin-right: auto;
-//         margin-left: auto;
-
-//     }
-
-// @media screen and (min-width: 1200px) {
-//         width: 358px;
-//         margin-bottom: 0;
-//     }
-
-// width: 450px;
-// padding-left: 16px;
-// padding-top: 15px;
-// padding-bottom: 15px;
-// background-color: inherit;
-
-// box-shadow: 0px 4px 4px 0px #00000026;
-// border: 1px solid #ffffff4d;
-// border-radius: 4px;
-// font-family: Roboto;
-// font-size: 16px;
-// line-height: 1.25;
-// color: var(--background-color-white);
-// margin-bottom: 20px;    
-// }
-
-// .subscribe-btn {
-//     display: inline-flex;
-//     background-color: var(--accent-color);
-//     color: var(--background-color-white);
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.88;
-//     align-items: center;
-//     letter-spacing: 0.06em;
-//     cursor: pointer;
-//     padding-top: 10px;
-//     padding-right: 29px;
-//     padding-bottom: 10px;
-//     padding-left: 28px;
-//     border: transparent;
-//     border-radius: 4px;
-
-//     @media screen and (min-width: 1200px) {
-//             margin-left: 12px;
-//         }
-    
-    
-
-//     &:hover,
-//     &:focus{
-//       background-color: var(--botton-hover-blue);
-//     }
-// }
-
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-// .subscribe-content {
-//     @media screen and (max-width:767px) {
-//         display: contents;
-//     }
-
-//     @media screen and (min-width:1200px) {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         margin-left: 94px;
-//     }
-// }
-
-// .subscribe-block {
-//     @media screen and (max-width:767px) {
-//         display: flex;
-//         flex-direction: column;   
-//         align-content: center;
-//         flex-wrap: wrap;
-//         align-items: center;
-//     }
-
-//     @media screen and (max-width:1199px) {
-//         display: flex;
-//         flex-direction: column;
-
-//         align-content: center;
-//         flex-wrap: wrap;
-//         align-items: center;
-//     }
-
-//     @media screen and (min-width:1200px) {
-//         display: flex;
-//     }
-// }
-
-// .subscribe-title {
-//     font-family: 'Roboto';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 16px;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-    
-//     color: #FFFFFF;
-//     margin-bottom: 20px;
-
-//     @media screen and (max-width:767px) {
-//         text-align: center;
-//     }
-// }
-
-// .subscribe-icon {
-//     margin-left: 10px;
-//     fill: var(--background-color-white);
-// }
-
-// .subscribe-email {
-//     position: static;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-//     background-color:transparent;
-//     color: #FFFFFF;
-//     width: 358px;
-//     height: 50px;
-//     padding-left: 16px;;
-
-//     @media screen and (max-width:767px) {
-//         width: 100%;
-//         margin-bottom: 20px;
-//         max-width: 450px;
-//     }
-
-//     @media screen and (min-width:768px) {
-//         width: 450px;
-//         margin-bottom: 20px;
-//     }
-
-//     @media screen and (min-width:1200px) {
-//         width: 358px;
-//     }
-// }
-
-// .subscribe-block {
-//     margin-left: auto;
-// }
-
-// .subscribe-content {
-//     display: flex;
-//     align-items: center;
-//     text-align: center;
-// }
-
-// .subscribe-block input {
-//     margin-right: 12px;
-//     padding: 15px;
-//     width: 358px;
-//     border-color: inherit;
-//     background-color: var(--hero-background-grey);
-//     color: var(--background-color-white);
-//     outline: transparent;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-//     transition: border 250ms var(--timing-function);
-
-
-//     &:hover,
-//     &:focus {
-//         border: 1px solid var(--accent-color);
-//     }
-// }
-
-// .subscribe-icon {
-//     fill: var(--background-color-white);
-//     margin-left: 10px;
-// }
-
-// .subscribe-title {
-//     margin-bottom: 20px;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--background-color-white);
-// }

@@ -25,62 +25,6 @@
     }
 }
 
-// .services-btn{
-//     background: #2196F3;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     border-color: transparent;
-//     cursor: pointer;
- 
-//     color:#FFFFFF ;
-//     font-family: 'Roboto';
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 30px;
-//     letter-spacing: 0.06em;
-
-//     display: flex;
-//     align-items: center;
-//     margin: 0 auto;
-//     transition: 250ms ease;
-
-
-//     @media screen and (max-width:767px) {
-//         display: flex;
-//         justify-content: center;
-//     }
-// }
-
-// .services-btn:focus{
-//     background: #2196F3;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-// }
-
-// .services-btn:hover{
-//     background-color: #188CE8;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-// }
-
-
-// .portfolio-btn-list {
-//     display: flex;
-//     margin-bottom: 50px;
-//     justify-content: center;
-// }
-
-// .portfolio-btn-list_item{
-//     @media screen and (max-width:767px) {
-//                 margin-bottom: 15px; 
-//             }
-// }
-
-// .portfolio-btn-list__item:not(:last-child) {
-//     margin-right: 8px;
-// }
 
 .portfolio-btn {
     padding: 6px 22px;
@@ -145,42 +89,13 @@
     border-radius: 4px;
 
     @media screen and (min-width: 1200px) {
-            margin-left: 12px;
-        }
-    
-    
-
-    &:hover,
-    &:focus{
-      background-color: var(--botton-hover-blue);
+        margin-left: 12px;
     }
 
 
 
-
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
-    // padding: 10px 28px;
-    // width: 200px;
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.88;
-    // letter-spacing: 0.06em;
-    // color: var(--background-color-white);
-    // background-color: var(--accent-color);
-    // border-color: var(--accent-color);
-    // box-shadow: 0pc 4px 4px rgba(0, 0, 0, 0.15);
-    // border-radius: 4px;
-    // transition: backgroudn-color 250ms var(--timing-function);
-    // cursor: pointer;
-    // border: none;
-    // margin-right: auto;
-    // margin-left: auto;
-
-    // &:hover,
-    // &:focus {
-    //     background-color: var(--botton-hover-blue);
-    // }
+    &:hover,
+    &:focus {
+        background-color: var(--botton-hover-blue);
+    }
 }
-

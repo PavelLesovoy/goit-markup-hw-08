@@ -5,12 +5,12 @@
     }
 }
 
-.clients-list{
+.clients-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer;
-    
+
     gap: 30px;
 
     @media screen and (max-width: 767.98px) {
@@ -31,14 +31,14 @@
     }
 }
 
-.clients-list__item{
+.clients-list__item {
     padding: 0;
 }
 
-.clients-list__link{
+.clients-list__link {
     box-sizing: border-box;
     border: 1px solid var(--social-links-color);
-    border-radius: 4px; 
+    border-radius: 4px;
     height: 92px;
     // width: 170px;
 
@@ -61,66 +61,21 @@
         width: 170px;
     }
 
-    &:hover{
+    &:hover {
         border-color: var(--accent-color);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    &:focus{
+
+    &:focus {
         border-color: var(--accent-color);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    &:hover{
-        fill: var(--accent-color); 
+
+    &:hover {
+        fill: var(--accent-color);
     }
-    
-    &:focus{
-        fill: var(--accent-color); 
+
+    &:focus {
+        fill: var(--accent-color);
     }
 }
-
-// .clients-title {
-//     font-family: 'Roboto';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--primary-text-color);
-//     margin-bottom: 50px;
-
-// }
-
-// .clients-list {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-
-// .clients-list__link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 170px;
-//     height: 92px;
-//     border: 1px solid var(--social-links-color);
-//     border-radius: 4px;
-//     transition: background-color 250ms var(--timing-function);
-
-//     &:hover,
-//     &:focus {
-//         border-color: var(--accent-color);
-//     }
-// }
-
-// .clients-logo {
-//     fill: var(--social-links-color);
-//     transition: fill 250ms var(--timing-function);
-
-//     .clients-list__link:hover &,
-//     .clients-list__link:focus & {
-//         fill: var(--accent-color);
-//     }
-// }

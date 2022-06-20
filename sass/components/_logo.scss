@@ -32,37 +32,12 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     display: block;
-    
+
 
     @media screen and (max-width: 1199.98px) {
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-
-
-    // width: 145px;
-    // height: 31px;
-    // font-family: "Raleway";
-    // font-style: normal;
-    // font-weight: bold;
-    // font-size: 26px;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
-    // color: var(--background-color-white);
-    // margin-bottom: 20px;
-
-    // @media screen and (max-width: 1199.98px) {
-    //     text-align: center;
-    // }
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
-
-// .logo-footer {
-//     @media screen and (min-width:1200px) {
-//         text-align: left;
-//     }
-// }
