@@ -72,6 +72,12 @@
     justify-content: center;
 }
 
+.portfolio-btn-list_item{
+    @media screen and (max-width:767px) {
+                margin-bottom: 15px; 
+            }
+}
+
 .portfolio-btn-list__item:not(:last-child) {
     margin-right: 8px;
 }
