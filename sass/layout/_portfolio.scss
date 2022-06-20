@@ -1,34 +1,88 @@
-.btn-section{
-    @media screen and (min-width:1200px) {
-        padding-bottom: 94px;
+// .btn-section{
+//     @media screen and (min-width:1200px) {
+//         padding-bottom: 94px;
+//     }
+// }
+
+.btn-section {
+    background-color: var(--secondary-color);
+
+    @media screen and (max-width: 1199.98px) {
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
+
+    padding-top: 89px;
+    padding-bottom: 99px;
 }
 
 .portfolio-btn-list {
+    @media screen and (max-width: 767.98px) {
+      
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      margin-bottom: 30px;
+    }
+  
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+  }
 
-    @media screen and (max-width:767px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;  
-        margin-bottom: 40px;
+  .portfolio-btn-list__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .portfolio-btn-list__item:nth-child(3) {
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
+      margin-right: 0;
     }
-
-    @media screen and (min-width:768px) {
-        margin-bottom: 30px;
+  }
+  
+  .portfolio-btn-list__item:nth-child(-n + 3) {
+    @media screen  and (max-width: 767.98px) {
+      margin-bottom: 15px;
     }
-
-    @media screen and (min-width:1200px) {
-        margin-bottom: 50px;
+  }
+  
+  .portfolio-btn-list__item:nth-child(-n + 5) {
+    @media screen and (max-width: 479.98px) {
+      margin-bottom: 15px;
     }
-}
+  }
 
-.portfolio-btn-list_item{
-    @media screen and (max-width:767px) {
-                margin-bottom: 15px; 
-            }
-}
+// .portfolio-btn-list {
+//     display: flex;
+//     justify-content: center;
+
+//     @media screen and (max-width:767px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: flex-start;  
+//         margin-bottom: 40px;
+//     }
+
+//     @media screen and (min-width:768px) {
+//         margin-bottom: 30px;
+//     }
+
+//     @media screen and (min-width:1200px) {
+//         margin-bottom: 50px;
+//     }
+// }
+
+// .portfolio-btn-list_item{
+//     @media screen and (max-width:767px) {
+//                 margin-bottom: 15px; 
+//             }
+// }
+
+// ......
 
 // .portfolio-btn-list__item{
 //     padding: 6px 22px;
@@ -98,13 +152,18 @@
     margin-right: 30px;
     margin-bottom: 30px;
 
-    &:hover .project-overlay {
-        transform: translateY(0);}
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+            &:hover .project-overlay {
+                transform: translateY(0);
 
     @media screen and (max-width:767px) {
         margin-right: 0;
         margin-bottom: 30px;
     }
+}
 }
 
 
