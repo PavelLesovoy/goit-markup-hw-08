@@ -127,19 +127,19 @@ address {
 }
 
 @media screen and (min-width: 480px) {
-  .container .container {
+  .container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container .container {
+  .container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container .container {
+  .container {
     width: 1200px;
   }
 }
